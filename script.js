@@ -1,5 +1,3 @@
-let videoPlayer = document.getElementById("video-player");
-
 function toggleClasses(teacher) {
     // إخفاء أزرار الأساتذة
     const teacherBtns = document.querySelectorAll('.teacher-btn');
@@ -60,46 +58,6 @@ function showLectures(classId) {
     document.getElementById('lectures-section').style.display = 'block';
 }
 
-// روابط محاضرات كل فصل
-const lecturesData = {
-    1: {
-        lecture1: "https://iframe.mediadelivery.net/play/378895/9fee9da3-7aa2-45dc-8bcf-5e9293fabf08",
-        lecture2: "https://iframe.mediadelivery.net/play/378895/xyzabc", // رابط المحاضرة 2
-    },
-    2: {
-        lecture3: "https://iframe.mediadelivery.net/play/378895/abcxyz", // رابط محاضرة 3
-        lecture4: "https://iframe.mediadelivery.net/play/378895/defghi", // رابط محاضرة 4
-    },
-    3: {
-        lecture5: "https://iframe.mediadelivery.net/play/378895/ghijk1", // رابط محاضرة 5
-        lecture6: "https://iframe.mediadelivery.net/play/378895/your-new-lecture6-link", // رابط محاضرة 6
-        lecture7: "https://iframe.mediadelivery.net/play/378895/629c3f5b-4459-49b9-8bce-80621b133d95", // رابط محاضرة 3-مسائل القوي
-    },
-    4: {
-        lecture8: "https://iframe.mediadelivery.net/play/378895/ijklm2", // رابط محاضرة 8
-    }
-};
-
-// دالة تشغيل المحاضرة بناءً على الفصل والمحاضرة
-function playLecture(classId, lectureId) {
-    document.getElementById('lectures-section').style.display = 'none';
-    document.getElementById('video-container').style.display = 'flex';
-
-    // جلب الرابط من البيانات المخزنة بناءً على الفصل والمحاضرة
-    const iframeSrc = lecturesData[classId][lectureId];
-
-    // تشغيل الفيديو تلقائيًا
-    if (iframeSrc) {
-        videoPlayer.src = iframeSrc + "?autoplay=1"; // إضافة autoplay لبدء الفيديو تلقائيًا
-    } else {
-        console.error("الرابط غير موجود!");
-    }
-}
-
-function closeVideo() {
-    // إعادة تحميل الصفحة
-    location.reload();
-}
 
 function toggleClassColor(classId) {
     // الحصول على جميع أزرار الفصول

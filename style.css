@@ -32,6 +32,12 @@ h1 {
   margin-top: 5px;
 }
 
+.extra-small-textt {
+  font-size: 19px;
+  margin-top: 5px;
+  color: #ff0000;
+}
+
 button {
   background-color: #333;
   color: white;
@@ -72,36 +78,9 @@ button.available {
 }
 
 button.available:hover {
-  background-color: #eb6060;
+  background-color: #ff0000;
 }
 
-/* إعدادات الفيديو */
-.video-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-iframe {
-  width: 170%;
-  height: 170%;
-  border: none;
-}
-
-.close-btn {
-  background-color: red;
-  padding: 150vw 1vh;
-  font-size: 23px;
-  margin-top: 100px;
-  margin-left: 0px;
-  border-radius: 10px;
-}
 
 /* إضافة الأنماط للزرين في الجزء العلوي الأيمن */
 .social-buttons {
@@ -136,20 +115,21 @@ iframe {
 
 /* تخصيص زر المحاضرات باللون الأزرق */
 .lecture-btn {
-  background-color: #007bff; /* اللون الأزرق */
-  color: white; /* النص باللون الأبيض */
-  padding: 10px 20px;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 5px;
-  transition: background-color 0.3s ease;
+  display: block;
+  padding: 1vw 2vh;
+  font-size: 21px;
+  background-color: #1d88fa;
+  color: white;
+  margin-bottom: 2vw;
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 1px;
+  text-decoration: none;
 }
 
 /* تغيير اللون عند التمرير على الزر */
 .lecture-btn:hover {
-  background-color: #0056b3; /* أزرق داكن عند التمرير */
+  background-color: #84b2e4; /* أزرق داكن عند التمرير */
 }
 
 /* تحديد حالة غير نشطة للأزرار المعطلة */
@@ -176,10 +156,6 @@ iframe {
   color: white; /* تغيير لون النص ليكون أبيض */
 }
 
-/* تغيير اللون عند التمرير على الزر */
-.class-btn:hover {
-  background-color: #555555; /* تغيير اللون عند التمرير */
-}
 /* تغيير لون زر الأستاذ حسين */
 .teacher-btn.teacher-hussein {
   background-color: #4CAF50; /* اختر اللون الذي تفضله */
