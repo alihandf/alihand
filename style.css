@@ -1,37 +1,198 @@
+/* الأساسيات */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #101224;
-    margin: 0;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2 {
-    color: #fcfcfc;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+header {
+  margin-top: 20px;
 }
 
-ul li {
-    background: #a2b8cf;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 5px;
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-ul li:hover {
-    background: #0056b3;
+h1 {
+  font-size: 30px;
+}
+
+.small-text {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.extra-small-text {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: 1px solid #444;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+button.active {
+  background-color: #4eb151;
+}
+
+button:hover {
+  background-color: #777;
+}
+
+button.back-btn {
+  background-color: #ff0000;
+  margin-top: 20px;
+}
+
+button.back-btn:hover {
+  background-color: #f38383; /* اللون الأخف عند التمرير */
+}
+
+/* تلوين الفصول المتوفرة */
+button.available {
+  background-color: white;
+  color: black;
+}
+
+button.available:hover {
+  background-color: #eb6060;
+}
+
+/* إعدادات الفيديو */
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 iframe {
-    width: 100%;
-    max-height: 1000px;
-    height: 2000px;
-    margin-top: 20px;
-    border: none;
+  width: 170%;
+  height: 170%;
+  border: none;
+}
+
+.close-btn {
+  background-color: red;
+  padding: 20px;
+  font-size: 23px;
+  margin-top: 360px;
+  margin-left: -110px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* إضافة الأنماط للزرين في الجزء العلوي الأيمن */
+.social-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.telegram-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.telegram-btn.red {
+  background-color: red;
+}
+
+.telegram-btn.green {
+  background-color: rgb(67, 167, 67);
+}
+
+.telegram-btn:hover {
+  opacity: 0.8;
+  background-color: rgb(125, 146, 125);
+}
+
+/* تخصيص زر المحاضرات باللون الأزرق */
+.lecture-btn {
+  background-color: #007bff; /* اللون الأزرق */
+  color: white; /* النص باللون الأبيض */
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* تغيير اللون عند التمرير على الزر */
+.lecture-btn:hover {
+  background-color: #0056b3; /* أزرق داكن عند التمرير */
+}
+
+/* تحديد حالة غير نشطة للأزرار المعطلة */
+.lecture-btn:disabled {
+  background-color: #ccc; /* لون رمادي للأزرار غير النشطة */
+  color: #666; /* لون النص الرمادي للأزرار غير النشطة */
+  cursor: not-allowed;
+}
+/* زر الفصل */
+.class-btn.available {
+  background-color: #fff; /* لون الخلفية الطبيعي */
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* تغيير اللون عند الضغط على الزر */
+.class-btn.active {
+  background-color: red; /* تلوين الزر باللون الأحمر عند الضغط عليه */
+  color: white; /* تغيير لون النص ليكون أبيض */
+}
+
+/* تغيير اللون عند التمرير على الزر */
+.class-btn:hover {
+  background-color: #555555; /* تغيير اللون عند التمرير */
+}
+/* تغيير لون زر الأستاذ حسين */
+.teacher-btn.teacher-hussein {
+  background-color: #4CAF50; /* اختر اللون الذي تفضله */
+  color: white;
+}
+
+.teacher-btn.teacher-hussein:hover {
+  background-color: #94c997; /* اللون عند التمرير */
 }
