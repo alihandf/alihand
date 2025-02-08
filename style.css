@@ -89,6 +89,7 @@ h1 {
   font-size: 18px;
   border-radius: 5px;
   text-decoration: none;
+  margin-bottom: 2vw;
 }
 .teacher-btn:hover {
   background-color: #7d837e; /* اللون عند التمرير */
@@ -103,6 +104,7 @@ h1 {
   font-size: 18px;
   border-radius: 5px;
   text-decoration: none;
+  margin-bottom: 2vw;
 }
 .teacher-btnn:hover {
   background-color: #94c997; /* اللون عند التمرير */
