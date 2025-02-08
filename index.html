@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منصة نظر علي التعليمية</title>
+    <title>منصة يد علي التعليمية</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>مــنــصــة نـــظـــر عــلـي الـتـعـلـيـمـيـة</h1>
+            <h1>مــنــصــة يد عــلـي الـتـعـلـيـمـيـة</h1>
             <p class="small-text">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ</p>
                         <p class="extra-small-text">قوله تعالى : {‏وَأَن لَّيْسَ لِلإِنسَانِ إِلَّا مَا سَعَى, وَأَنَّ سَعْيَهُ سَوْفَ يُرَى , ثُمَّ يُجْزَاهُ الْجَزَاء الأَوْفَى}</p>
                         <p class="extra-small-textt">فيقول النبي صلى الله عليه وسلم: "من دلَّ على خير، فله أجر فاعله" رواه مسلم>>>ارسلها لمن يحتاجها</p>
@@ -17,14 +17,14 @@
             <!-- إضافة الزرين في الجزء العلوي الأيمن -->
             <div class="social-buttons">
                 <a href="https://t.me/alihand1" class="telegram-btn red" target="_blank">قناة علي هاند</a>
-                <a href="https://t.me/SADS_SiX6TH" class="telegram-btn green" target="_blank">قناة نظوري</a>
+                <a href="https://t.me/alihand1bot" class="telegram-btn green" target="_blank">تواصل مع الدعم</a>
             </div>
         </header>
 
         <!-- قسم الأساتذة -->
         <section class="teachers" id="teachers-section">
-            <button class="teacher-btn teacher-hussein" onclick="toggleClasses('hussein')">حسين الهاشمي 2025</button>
-            <button class="teacher-btn disabled">عقيل الزبيدي 2025 ( قريباً )</button>
+            <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/hussin.html" class="teacher-btn teacher-hussein" target="_blank">حسين الهاشمي 2025</a>
+            <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/14.html" class="teacher-btnn" target="_blank">عقيل الزبيدي 2025</a>
             <button class="teacher-btn disabled">حيدروليد 2025 ( قريباً )</button>
             <button class="teacher-btn disabled">ساجد العكيلي 2025 ( قريباً )</button>
             <button class="teacher-btn disabled">حيدر عبدالائمة 2025 ( قريباً )</button>
@@ -41,169 +41,7 @@
             <button class="teacher-btn disabled">فراس براق 2025 ( قريباً )</button>
             <button class="teacher-btn disabled">رفل الزبيدي 2025 ( قريباً )</button>
 
-            <button class="back-btn" id="back-btn" onclick="goBack()" style="display: none;">رجوع</button>
         </section>
 
-        <!-- مكان لعرض اسم الأستاذ -->
-        <div id="teacher-name" style="display: none; margin-top: 20px;">
-            <h2> <span id="teacher-name-text"></span></h2>
-        </div>
-
-        <!-- قسم الفصول -->
-        <section class="classes" id="class-section" style="display: none;">
-            <button id="class-1" class="class-btn available" onclick="toggleClassColor(1); showLectures(1)">الفصل 1</button>
-            <button id="class-2" class="class-btn available" onclick="toggleClassColor(2); showLectures(2)">الفصل 2</button>
-            <button id="class-3" class="class-btn available" onclick="toggleClassColor(3); showLectures(3)">الفصل 3</button>
-            <button id="class-4" class="class-btn available" onclick="toggleClassColor(4); showLectures(4)">الفصل 4</button>
-            <button class="class-btn disabled">فصل 6 (قريباً)</button>
-            <button class="class-btn disabled">فصل 5 (قريباً)</button>
-            <button class="class-btn disabled">فصل 7 (قريباً)</button>
-            <button class="class-btn disabled">فصل 8 (قريباً)</button>
-        </section>
-
-
-        <!-- قسم المحاضرات -->
-        <section class="lectures" id="lectures-section" style="display: none;">
-            <!-- محاضرات الفصل 1 -->
-            <div class="lecture-group" id="lectures-1" style="display: none;">
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/14.html" class="lecture-btn" target="_blank">[14] انثالبي الاحتراق القياسية 1</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/15.html" class="lecture-btn" target="_blank">[15] انثالبي الاحتراق القياسية 2</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/16.html" class="lecture-btn" target="_blank">[16] اسئلة ربط التكوين والاحتراق</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/17.html" class="lecture-btn" target="_blank">[17] انثالبي التغيرات الفيزيائية</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/18.html" class="lecture-btn" target="_blank">[18] هيس 1</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/19.html" class="lecture-btn" target="_blank">[19] هيس 2</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/20.html" class="lecture-btn" target="_blank">[20] هيس 3</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/21.html" class="lecture-btn" target="_blank">[21] حل واجبات هيس 1</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/22.html" class="lecture-btn" target="_blank">[22] حل واجبات هيس 2</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/23.html" class="lecture-btn" target="_blank">[23] حل واجبات هيس 3</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/24.html" class="lecture-btn" target="_blank">[24] قانون المجموع (سميشن)</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/25.html" class="lecture-btn" target="_blank">[25] نحل بهيس لو بالمجموع ؟</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/26.html" class="lecture-btn" target="_blank">[26] العمليات التلقائية</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/27.html" class="lecture-btn" target="_blank">[27] الانتروبي</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/28.html" class="lecture-btn" target="_blank">[28] طاقة كبس-قانون المجموع</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/29.html" class="lecture-btn" target="_blank">[29] واجبات علاقة كبس 1</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/30.html" class="lecture-btn" target="_blank">[30] واجبات علاقة كبس 2</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/31.html" class="lecture-btn" target="_blank">[31] واجبات علاقة كبس 3</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/32.html" class="lecture-btn" target="_blank">[32] واجبات علاقة كبس 4</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/33.html" class="lecture-btn" target="_blank">[33] تطبيقات علاقة كبس</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/34.html" class="lecture-btn" target="_blank">[34] تعاليل تطبيقات علاقة كبس</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/35.html" class="lecture-btn" target="_blank">[35] مسائل تطبيقات علاقة كبس</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/36.html" class="lecture-btn" target="_blank">[36] حساب انتروبي التغيرات الفيزيائية</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/37.html" class="lecture-btn" target="_blank">[37] مراجعة جزء 1 الى المسعر داخل</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/38.html" class="lecture-btn" target="_blank">[38] مراجعة جزء 2 من س 79 الى س 117 داخل</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/39.html" class="lecture-btn" target="_blank">[39] مراجعة جزء 3</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/40.html" class="lecture-btn" target="_blank">[40] سؤال اثرائي</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/41.html" class="lecture-btn" target="_blank">[41] مراجعة جزء 4</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/1/42.html" class="lecture-btn" target="_blank">[42] مراجعة الفصل الاول من البداية الى كبس (بالتفصيل)</a>
-            </div>
-            <!-- محاضرات الفصل 2 -->
-            <div class="lecture-group" id="lectures-2" style="display: none;">
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/1.html" class="lecture-btn" target="_blank">[1]  مقدمة الفصل</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/2.html" class="lecture-btn" target="_blank">[2]  ثابت الاتزان Keq</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/3.html" class="lecture-btn" target="_blank">[3] الفرضية - النوع الاول</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/4.html" class="lecture-btn" target="_blank">[4] (شرح الفرضية)</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/5.html" class="lecture-btn" target="_blank">[5] (النوع الثاني)</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/6.html" class="lecture-btn" target="_blank">[6] (النوع الثالث 1 )</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/7.html" class="lecture-btn" target="_blank">[7]  (النوع الثالث 2 )</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/8.html" class="lecture-btn" target="_blank">[8] (النوع الثالث 3 )</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/9.html" class="lecture-btn" target="_blank">[9]  (النوع الثالث 4)</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/10.html" class="lecture-btn" target="_blank">[10] (النوع الثالث 5)</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/11.html" class="lecture-btn" target="_blank">[11] (النوع الثالث 6)</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/12.html" class="lecture-btn" target="_blank">[12]  (النوع الثالث 7 و 8)</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/13.html" class="lecture-btn" target="_blank">[13]  (النوع الثالث 9)</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/14.html" class="lecture-btn" target="_blank">[14]  (النوع الرابع)</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/15.html" class="lecture-btn" target="_blank">[15] (مراجعة الانواع الاربعة)</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/16.html" class="lecture-btn" target="_blank">[16]  حل واجبات فصل ثاني من 1 الى 75</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/17.html" class="lecture-btn" target="_blank">[17]  العلاقة بين Kc و Kp جزء 1</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/18.html" class="lecture-btn" target="_blank">[18] العلاقة بين Kc و Kp جزء 2</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/19.html" class="lecture-btn" target="_blank">[19] العلاقة بين Kc و Kp جزء 3</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/20.html" class="lecture-btn" target="_blank">[20] العلاقة بين Kc و Kp جزء 4</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/21.html" class="lecture-btn" target="_blank">[21] اهمية ثابت الاتزان - الشرحيات</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/22.html" class="lecture-btn" target="_blank">[22]  اهمية ثابت الاتزان - المسائل 1</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/23.html" class="lecture-btn" target="_blank">[23] اهمية ثابت الاتزان - المسائل 2</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/24.html" class="lecture-btn" target="_blank">[24]  اهمية ثابت الاتزان - المسائل 3</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/25.html" class="lecture-btn" target="_blank">[25]   حاصل التفاعل 1</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/26.html" class="lecture-btn" target="_blank">[26] حاصل التفاعل 2</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/27.html" class="lecture-btn" target="_blank">[27] العلاقة بين الطاقة الحرة و Q</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/28.html" class="lecture-btn" target="_blank">[28] قاعدة لو شاتليه 1</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/29.html" class="lecture-btn" target="_blank">[29] قاعدة لو شاتليه 2</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/30.html" class="lecture-btn" target="_blank">[30] قاعدة لو شاتليه 3</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/31.html" class="lecture-btn" target="_blank">[31] قاعدة لو شاتليه 4</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/32.html" class="lecture-btn" target="_blank">[32] حل واجبات من س 76 الى س108</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/33.html" class="lecture-btn" target="_blank">[33] حل واجبات من س 109 الى س120</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/34.html" class="lecture-btn" target="_blank">[34] حل واجبات من س 121 الى س130</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/35.html" class="lecture-btn" target="_blank">[35] حل اسئلة الفصل س 1 و 2</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/2/36.html" class="lecture-btn" target="_blank">[36] حل اسئلة الفصل س 3</a>
-                <a href="" class="lecture-btnn" target="_blank">[37] مراجعة من البداية الى العلاقة(قريباً)</a>
-                <a href="" class="lecture-btnn" target="_blank">[38] (قريباً)مراجعة العلاقة</a>
-            </div>
-            <!-- محاضرات الفصل 3 -->
-            <div class="lecture-group" id="lectures-3" style="display: none;">
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/1.html" class="lecture-btn" target="_blank">[1] مقدمة الفصل الثالث</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/2.html" class="lecture-btn" target="_blank">[2] الالكتروليتات القوية</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/3.html" class="lecture-btn" target="_blank">[3] مسائل القوي</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/4.html" class="lecture-btn" target="_blank">[4] الالكتروليتات الضعيفة</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/5.html" class="lecture-btn" target="_blank">[5] مسائل الالكتروليتات الضعيفة</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/6.html" class="lecture-btn" target="_blank">[6] مسائل الالكتروليتات الضعيفة</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/7.html" class="lecture-btn" target="_blank">[7] مسائل الالكتروليتات الضعيفة</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/8.html" class="lecture-btn" target="_blank">[8] مسائل الالكتروليتات الضعيفة</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/9.html" class="lecture-btn" target="_blank">[9] مراجعة وحل واجبات من س 1 الى س 30</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/10.html" class="lecture-btn" target="_blank">[10] الحوامض متعددة البروتون</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/11.html" class="lecture-btn" target="_blank">[11] KW</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/12.html" class="lecture-btn" target="_blank">[12] اساسيات اللوغارتم</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/13.html" class="lecture-btn" target="_blank">[13]  حساب H , OH , PH , POH</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/14.html" class="lecture-btn" target="_blank">[14]  حساب H , OH , PH , POH</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/15.html" class="lecture-btn" target="_blank">[15] حساب كتلة القوي</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/16.html" class="lecture-btn" target="_blank">[16]  حساب كتلة الضعيف</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/17.html" class="lecture-btn" target="_blank">[17] التخفيف</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/18.html" class="lecture-btn" target="_blank">[18] الاملاح - النوع 1</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/19.html" class="lecture-btn" target="_blank">[19] الاملاح - النوع 2 و 3</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/20.html" class="lecture-btn" target="_blank">[20] الاملاح - النوع 4</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/21.html" class="lecture-btn" target="_blank">[21] بفر محلولين 1</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/22.html" class="lecture-btn" target="_blank">[22]  بفر محلولين 2</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/23.html" class="lecture-btn" target="_blank">[23] بفر ثلاث محاليل 1</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/24.html" class="lecture-btn" target="_blank">[24]  بفر ثلاث محاليل 2</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/25.html" class="lecture-btn" target="_blank">[25]  تأثير الايون المشترك</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/26.html" class="lecture-btn" target="_blank">[26] الذوبانية 1</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/27.html" class="lecture-btn" target="_blank">[27] الذوبانية 2</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/28.html" class="lecture-btn" target="_blank">[28] الترسيب</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/29.html" class="lecture-btn" target="_blank">[29] الايون المشترك 1</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/30.html" class="lecture-btn" target="_blank">[30] الايون المشترك 2</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/31.html" class="lecture-btn" target="_blank">[31] الايون المشترك 3</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/32.html" class="lecture-btn" target="_blank">[32] تأثير الاس الهيدروجيني PH</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/33.html" class="lecture-btn" target="_blank">[33] شرحيات الفصل الثالث</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/34.html" class="lecture-btn" target="_blank">[34] مراجعة الحوامض و القواعد القوية</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/35.html" class="lecture-btn" target="_blank">[35] مراجعة الحوامض و القواعد الضعيفة</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/36.html" class="lecture-btn" target="_blank">[36] مراجعة التخفيف</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/37.html" class="lecture-btn" target="_blank">[37] مراجعة الاملاح جزء 1</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/38.html" class="lecture-btn" target="_blank">[38] مراجعة الاملاح جزء 2</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/39.html" class="lecture-btn" target="_blank">[39] مراجعة بفر محلولين جزء 1</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/3/40.html" class="lecture-btn" target="_blank">[40] مراجعة بفر محلولين جزء 2</a>
-            </div>
-
-            <!-- محاضرات الفصل 4 -->
-            <div class="lecture-group" id="lectures-4" style="display: none;">
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/4/1.html" class="lecture-btn" target="_blank">[1] اعداد التأكسد</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/4/2.html" class="lecture-btn" target="_blank">[2] التأكسد و الاختزال</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/4/3.html" class="lecture-btn" target="_blank">[3] معادلات التأكسد و الاختزال</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/4/4.html" class="lecture-btn" target="_blank">[4] الخلايا الكهروكيميائية</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/4/5.html" class="lecture-btn" target="_blank">[5] شرحيات جهد الخلية</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/4/6.html" class="lecture-btn" target="_blank">[6] أنواع الاقطاب</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/4/7.html" class="lecture-btn" target="_blank">[7] التعبير الكتابي</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/4/8.html" class="lecture-btn" target="_blank">[8] حساب Ecell</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/4/8m.html" class="lecture-btn" target="_blank">[8] ملحق محاضرة 8</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/4/9m1.html" class="lecture-btn" target="_blank">[9] هل يمكن 1</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/4/9m2.html" class="lecture-btn" target="_blank">[9] هل يمكن 2</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/4/9m3.html" class="lecture-btn" target="_blank">[9] هل يمكن 3</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/4/9m4.html" class="lecture-btn" target="_blank">[9] هل يمكن 4</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/4/9m5.html" class="lecture-btn" target="_blank">[9] هل يمكن 5</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/4/9m6.html" class="lecture-btn" target="_blank">[9] العلاقة بين Ecell</a>
-                <a href="https://alihandf.github.io/alihand/hussainalhashemi2025/4/10.html" class="lecture-btn" target="_blank">[10] نيرنست1</a>
-            </div>
-        </section>
-
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>

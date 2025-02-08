@@ -1,7 +1,7 @@
 /* الأساسيات */
 body {
   font-family: Arial, sans-serif;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
   text-align: center;
   margin: 0;
@@ -38,49 +38,6 @@ h1 {
   color: #ff0000;
 }
 
-button {
-  background-color: #333;
-  color: white;
-  border: 1px solid #444;
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  font-size: 18px;
-  border-radius: 5px;
-}
-
-button:disabled {
-  background-color: #555;
-  cursor: not-allowed;
-}
-
-button.active {
-  background-color: #4eb151;
-}
-
-button:hover {
-  background-color: #777;
-}
-
-button.back-btn {
-  background-color: #ff0000;
-  margin-top: 10vh;
-}
-
-button.back-btn:hover {
-  background-color: #f38383; /* اللون الأخف عند التمرير */
-}
-
-/* تلوين الفصول المتوفرة */
-button.available {
-  background-color: white;
-  color: black;
-}
-
-button.available:hover {
-  background-color: #ff0000;
-}
-
 
 /* إضافة الأنماط للزرين في الجزء العلوي الأيمن */
 .social-buttons {
@@ -113,64 +70,6 @@ button.available:hover {
   background-color: rgb(125, 146, 125);
 }
 
-/* تخصيص زر المحاضرات باللون الأزرق */
-.lecture-btn {
-  display: block;
-  padding: 1vw 2vh;
-  font-size: 21px;
-  background-color: #1d88fa;
-  color: white;
-  margin-bottom: 2vw;
-  text-align: center;
-  border-radius: 10px;
-  margin-left: 1px;
-  text-decoration: none;
-}
-.lecture-btnn {
-  display: block;
-  padding: 1vw 2vh;
-  font-size: 21px;
-  background-color: #414549;
-  color: white;
-  margin-bottom: 2vw;
-  text-align: center;
-  border-radius: 10px;
-  margin-left: 1px;
-  text-decoration: none;
-}
-
-/* تغيير اللون عند التمرير على الزر */
-.lecture-btn:hover {
-  background-color: #84b2e4; /* أزرق داكن عند التمرير */
-}
-.lecture-btnn:hover {
-  background-color: #9da3a8; /* أزرق داكن عند التمرير */
-}
-
-/* تحديد حالة غير نشطة للأزرار المعطلة */
-.lecture-btn:disabled {
-  background-color: #ccc; /* لون رمادي للأزرار غير النشطة */
-  color: #666; /* لون النص الرمادي للأزرار غير النشطة */
-  cursor: not-allowed;
-}
-/* زر الفصل */
-.class-btn.available {
-  background-color: #fff; /* لون الخلفية الطبيعي */
-  color: black;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  margin: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* تغيير اللون عند الضغط على الزر */
-.class-btn.active {
-  background-color: red; /* تلوين الزر باللون الأحمر عند الضغط عليه */
-  color: white; /* تغيير لون النص ليكون أبيض */
-}
-
 /* تغيير لون زر الأستاذ حسين */
 .teacher-btn.teacher-hussein {
   background-color: #4CAF50; /* اختر اللون الذي تفضله */
@@ -180,3 +79,32 @@ button.available:hover {
 .teacher-btn.teacher-hussein:hover {
   background-color: #94c997; /* اللون عند التمرير */
 }
+.teacher-btn {
+  background-color: #5b615b;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.teacher-btn:hover {
+  background-color: #7d837e; /* اللون عند التمرير */
+}
+.teacher-btnn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.teacher-btnn:hover {
+  background-color: #94c997; /* اللون عند التمرير */
+}
+
