@@ -70,26 +70,17 @@ h1 {
   background-color: rgb(125, 146, 125);
 }
 
-/* تغيير لون زر الأستاذ حسين */
-.teacher-btn.teacher-hussein {
-  background-color: #4CAF50; /* اختر اللون الذي تفضله */
-  color: white;
-}
 
-.teacher-btn.teacher-hussein:hover {
-  background-color: #94c997; /* اللون عند التمرير */
-}
 .teacher-btn {
   background-color: #5b615b;
   color: white;
   padding: 10px 20px;
-  margin: 5px;
+  margin: 12px;
   cursor: pointer;
   text-align: center;
   font-size: 18px;
   border-radius: 5px;
   text-decoration: none;
-  margin-bottom: 2vw;
 }
 .teacher-btn:hover {
   background-color: #7d837e; /* اللون عند التمرير */
@@ -98,13 +89,12 @@ h1 {
   background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
-  margin: 5px;
+  margin: 4px;
   cursor: pointer;
   text-align: center;
   font-size: 18px;
   border-radius: 5px;
   text-decoration: none;
-  margin-bottom: 2vw;
 }
 .teacher-btnn:hover {
   background-color: #94c997; /* اللون عند التمرير */
